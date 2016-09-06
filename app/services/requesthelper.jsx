@@ -15,18 +15,23 @@ import $ from 'jquery';
 
 
 export default {
-    get : (url) => {
+    get : (url,funsuc,funcmp,storageag,k,alt) => {
         return $.ajax({
                 url:url,
-                dataType: 'json'
+                type: 'GET',
+                contentType: 'application/json',
+                dataType: 'text',
+                success: funsuc,
+                complete: funcmp
             });
     },
-    post : (url,data) => {
+    post : (url,data,err) => {
         return $.ajax({
             url:url,
             type: 'post',
             contentType: 'application/json',
-            data:data
+            data:data,
+            error: err
         });
     }
 }

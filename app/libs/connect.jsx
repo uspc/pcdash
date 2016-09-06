@@ -15,11 +15,17 @@ export default (state, actions) => {
 // at all. If Alt store changes, it will force render.
 //
 // See *AltContainer* and *connect-alt* for optimized solutions.
-function connect(state = () => {}, actions = {}, target) {
+function connect(state = () => {}, actions = {}, target={}) {
   class Connect extends React.Component {
+
+    constructor(props){
+      super(props);
+      console.log('initial state invoked...');
+    }
+
     componentDidMount() {
       const {flux} = this.context;
-
+      console.log('component will mount.. .');
       flux.FinalStore.listen(this.handleChange);
     }
 
@@ -35,10 +41,9 @@ function connect(state = () => {}, actions = {}, target) {
       const composedStores = composeStores(stores);
 
       return React.createElement(target,
-        {...Object.assign(
-          {}, this.props, state(composedStores), actions
-        )}
+        {...Object.assign({}, this.props, state(composedStores), actions)}
       );
+
     }
 
     handleChange = () => {
