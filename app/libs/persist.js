@@ -3,19 +3,15 @@ import storagefn from './storage';
 
 export default function(alt, storage, storageName) {
   try {
-    //alt.bootstrap(storage.get(storageName));
-    //alt.bootstrap(JSON.stringify(storage.get(storageName)));
-
-
-    if(localStorage.getItem(storageName)=== null)
+      if(localStorage.getItem(storageName)=== null)
     {
-      console.log('persistjs - localstorage '+localStorage.getItem(storageName));
       alt.bootstrap(JSON.stringify(storage.get(storageName)));
     }
     else
     {
-      console.log('local data found processing....'+localStorage.getItem(storageName));
       alt.bootstrap(localStorage.getItem(storageName));
+
+      // error handler is passed to ensure the session storage is written back to local incase of failure
       helper.post('/api/data',localStorage.getItem(storageName),errorhandle);
       localStorage.clear();
     }
@@ -38,7 +34,6 @@ export default function(alt, storage, storageName) {
   });
 
   const errorhandle = (e) => {
-    console.log('error loading data to local'+alt.takeSnapshot());
     localStorage.setItem(storageName,alt.takeSnapshot());
     console.log('local storage written'+localStorage.getItem(storageName));
   }

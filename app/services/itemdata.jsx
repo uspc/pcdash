@@ -6,19 +6,6 @@ import noteobject from '../services/model/noteobject'
 export default (app) => {
     app.route('/api/data')
         .get((req,res) =>{
-
-            //if(typeof req.query.id === 'undefined')
-            //{
-            //    res.send({id:1,message:'success'});
-            //}
-            //else
-            //{
-            //    noteobject.find({_id:req.param('id')},(err,data) =>{
-            //        res.send(data);
-            //    })
-            //}
-
-
             if(mongoose.connection.readyState) {
                 (typeof req.query.id === 'undefined') ? res.send({
                     id: 1,

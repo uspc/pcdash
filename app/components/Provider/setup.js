@@ -7,9 +7,7 @@ import loadseed from '../../libs/loadseed';
 export default alt => {
   alt.addStore('NoteStore', NoteStore);
   alt.addStore('LaneStore', LaneStore);
-
-  loadseed(sessionStorage,'app',alt);
-  //persist(alt, storage(sessionStorage), 'app');
+  loadseed(window.sessionStorage,'app',alt);
 }
 
 

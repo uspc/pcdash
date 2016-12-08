@@ -4,15 +4,9 @@ import update from 'react-addons-update';
 export default class LaneStore {
   constructor() {
     this.bindActions(LaneActions);
-
     this.lanes=[];
-
-    //this.lanes = [{id:'1ea94a9a-ee9e-4e25-a1cb-194f8a1ac250',name:'New lane',
-    //  notes:['63e13d49-b139-4381-111111111','e36c1dea-90cd-4b4a-ffffffff']}];
   }
   create(lane) {
-    // If `notes` aren't provided for some reason,
-    // default to an empty array.
     lane.notes = lane.notes || [];
     this.setState({
       lanes: this.lanes.concat(lane)

@@ -6,6 +6,4 @@ const noteDBobject = {
     value: mongoose.Schema.Types.Mixed
 };
 
-console.log('creating schema');
-
 export default mongoose.model('noteobject',noteDBobject,'noteobjects');

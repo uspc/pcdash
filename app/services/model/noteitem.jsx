@@ -6,7 +6,4 @@ const noteSchema = {
     task:String
 };
 
-console.log('creating schema');
-//const noteitem =
-
 export default mongoose.model('noteItem',noteSchema,'noteitems');
