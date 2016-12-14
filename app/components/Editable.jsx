@@ -8,6 +8,9 @@ export default ({editing, value, onEdit, className, ...props}) => {
       value={value}
       onEdit={onEdit}
       {...props} />;
+
+
+
   }
 
   return <span className={classnames('value', className)} {...props}>

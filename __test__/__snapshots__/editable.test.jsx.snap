@@ -1,0 +1,33 @@
+exports[`test Testing Editable - Print Span with editing is zero 1`] = `
+<span
+  className="value"
+  id="demo"
+  isDragging="0"
+  isOver="0" />
+`;
+
+exports[`test Testing Editable - Print input text 1`] = `
+<input
+  autoFocus={true}
+  className="edit"
+  defaultValue={undefined}
+  id="demo"
+  isDragging="0"
+  isOver="0"
+  onBlur={[Function]}
+  onEdit={undefined}
+  onKeyPress={[Function]}
+  type="text" />
+`;
+
+exports[`test Testing Editable - check if rendered type is input 1`] = `
+<input
+  autoFocus={true}
+  className="edit"
+  defaultValue="Sample note"
+  id="demo"
+  onBlur={[Function]}
+  onEdit={undefined}
+  onKeyPress={[Function]}
+  type="text" />
+`;

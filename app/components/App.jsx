@@ -7,11 +7,12 @@ import {compose} from 'redux';
 import {DragDropContext} from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 import PageHeader from './PageHeader';
-import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+//commented for jest testing..
+//import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { ContextMenu, MenuItem, ContextMenuLayer } from 'react-contextmenu';
 
 
-// changed export const app to const app.. since we are not importing at app level i.e import {App} from App.js
+// Exporting app here since we need to call this class for testing in mocha
 const App = ({LaneActions, lanes}) => {
   const addLane = () => {
     LaneActions.create({
@@ -38,7 +39,6 @@ const App = ({LaneActions, lanes}) => {
               </div>
           </nav>
 
-          <div className="test"/>
 
           <Lanes lanes={lanes} />
 

@@ -1,0 +1,197 @@
+exports[`test Testing Lane - Initial 1`] = `
+<div
+  flux={
+    Flux {
+      "FinalStore": AltStore {
+        "StoreModel": [Function],
+        "alt": [Circular],
+        "boundListeners": Array [],
+        "config": Object {
+          "getState": [Function],
+          "setState": [Function],
+        },
+        "dispatchToken": "ID_2",
+        "displayName": "",
+        "emitChange": [Function],
+        "lifecycle": [Function],
+        "preventDefault": false,
+        "reduce": [Function],
+        "state": Store {},
+        "subscriptions": Array [
+          Object {
+            "cb": [Function],
+            "dispose": [Function],
+          },
+          Object {
+            "cb": [Function],
+            "dispose": [Function],
+          },
+        ],
+        "transmitter": Object {
+          "$subscriptions": Array [
+            [Function],
+            [Function],
+          ],
+          "publish": [Function],
+          "subscribe": [Function],
+        },
+      },
+      "_actionsRegistry": Object {
+        "global.attachToLane": 1,
+        "global.create": 1,
+        "global.create1": 1,
+        "global.delete": 1,
+        "global.delete1": 1,
+        "global.detachFromLane": 1,
+        "global.loadInitial": 1,
+        "global.move": 1,
+        "global.update": 1,
+        "global.update1": 1,
+      },
+      "_initSnapshot": Object {
+        "LaneStore": Object {
+          "lanes": Array [],
+        },
+        "NoteStore": Object {
+          "notes": Array [],
+        },
+      },
+      "_lastSnapshot": Object {
+        "LaneStore": Object {
+          "lanes": Array [],
+        },
+        "NoteStore": Object {
+          "notes": Array [],
+        },
+      },
+      "actions": Object {
+        "global": Object {
+          "ATTACH_TO_LANE": "global.attachToLane",
+          "CREATE": "global.create",
+          "CREATE1": "global.create1",
+          "DELETE": "global.delete",
+          "DELETE1": "global.delete1",
+          "DETACH_FROM_LANE": "global.detachFromLane",
+          "LOAD_INITIAL": "global.loadInitial",
+          "MOVE": "global.move",
+          "UPDATE": "global.update",
+          "UPDATE1": "global.update1",
+          "attachToLane": [Function],
+          "create": [Function],
+          "create1": [Function],
+          "delete": [Function],
+          "delete1": [Function],
+          "detachFromLane": [Function],
+          "loadInitial": [Function],
+          "move": [Function],
+          "update": [Function],
+          "update1": [Function],
+        },
+      },
+      "batchingFunction": [Function],
+      "config": Object {},
+      "deserialize": [Function],
+      "dispatcher": Dispatcher {
+        "_callbacks": Object {
+          "ID_1": [Function],
+          "ID_2": [Function],
+          "ID_3": [Function],
+          "ID_4": [Function],
+          "ID_5": [Function],
+        },
+        "_isDispatching": false,
+        "_isHandled": Object {},
+        "_isPending": Object {},
+        "_lastID": 6,
+      },
+      "serialize": [Function],
+      "storeTransforms": Array [],
+      "stores": Object {
+        "LaneStore": AltStore {
+          "StoreModel": [Function],
+          "alt": [Circular],
+          "boundListeners": Array [
+            "global.create1",
+            "global.update1",
+            "global.delete1",
+            "global.attachToLane",
+            "global.detachFromLane",
+            "global.move",
+          ],
+          "config": Object {
+            "getState": [Function],
+            "setState": [Function],
+          },
+          "dispatchToken": "ID_4",
+          "displayName": "LaneStore",
+          "emitChange": [Function],
+          "lifecycle": [Function],
+          "preventDefault": false,
+          "reduce": [Function],
+          "state": Store {
+            "lanes": Array [],
+          },
+          "subscriptions": Array [],
+          "transmitter": Object {
+            "$subscriptions": Array [],
+            "publish": [Function],
+            "subscribe": [Function],
+          },
+        },
+        "NoteStore": AltStore {
+          "StoreModel": [Function],
+          "alt": [Circular],
+          "boundListeners": Array [
+            "global.create",
+            "global.update",
+            "global.delete",
+            "global.loadInitial",
+          ],
+          "config": Object {
+            "getState": [Function],
+            "setState": [Function],
+          },
+          "dispatchToken": "ID_3",
+          "displayName": "NoteStore",
+          "emitChange": [Function],
+          "lifecycle": [Function],
+          "preventDefault": false,
+          "reduce": [Function],
+          "state": Store {
+            "notes": Array [],
+          },
+          "subscriptions": Array [],
+          "transmitter": Object {
+            "$subscriptions": Array [],
+            "publish": [Function],
+            "subscribe": [Function],
+          },
+        },
+      },
+      "trapAsync": false,
+    }
+  }>
+  <div
+    className="lane-header"
+    onClick={[Function]}>
+    <div
+      className="lane-add-note">
+      <button
+        onClick={[Function]}>
+        +
+      </button>
+    </div>
+    <span
+      className="value lane-name" />
+    <div
+      className="lane-delete">
+      <button
+        onClick={[Function]}>
+        x
+      </button>
+    </div>
+  </div>
+  <ul
+    className="notes" />
+</div>
+`;

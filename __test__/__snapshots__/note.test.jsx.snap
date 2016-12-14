@@ -1,0 +1,10 @@
+exports[`test Testing Note 1`] = `
+<div
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }>
+  test
+</div>
+`;

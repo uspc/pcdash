@@ -1,0 +1,36 @@
+exports[`test Testing Lanes - Initial 1`] = `
+<div
+  className="lanes">
+  <div
+    className="lane">
+    <div
+      className="lane-header"
+      onClick={[Function]}>
+      <div
+        className="lane-add-note">
+        <button
+          onClick={[Function]}>
+          +
+        </button>
+      </div>
+      <input
+        autoFocus={true}
+        className="edit lane-name"
+        defaultValue="testing"
+        onBlur={[Function]}
+        onEdit={[Function]}
+        onKeyPress={[Function]}
+        type="text" />
+      <div
+        className="lane-delete">
+        <button
+          onClick={[Function]}>
+          x
+        </button>
+      </div>
+    </div>
+    <ul
+      className="notes" />
+  </div>
+</div>
+`;

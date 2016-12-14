@@ -1,0 +1,53 @@
+exports[`test Testing Notes - Initial 1`] = `
+<ul
+  className="notes">
+  <li>
+    <div
+      className="note"
+      onClick={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }>
+      <input
+        autoFocus={true}
+        className="edit editable"
+        defaultValue="one"
+        onBlur={[Function]}
+        onEdit={[Function]}
+        onKeyPress={[Function]}
+        type="text" />
+      <button
+        className="delete"
+        onClick={[Function]}>
+        x
+      </button>
+    </div>
+  </li>
+  <li>
+    <div
+      className="note"
+      onClick={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }>
+      <input
+        autoFocus={true}
+        className="edit editable"
+        defaultValue="two"
+        onBlur={[Function]}
+        onEdit={[Function]}
+        onKeyPress={[Function]}
+        type="text" />
+      <button
+        className="delete"
+        onClick={[Function]}>
+        x
+      </button>
+    </div>
+  </li>
+</ul>
+`;

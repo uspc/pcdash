@@ -1,0 +1,55 @@
+exports[`test Link renders correctly 1`] = `
+<div>
+  <nav
+    className="navbar navbar-inverse navbar-fixed-top">
+    <div
+      className="container-fluid">
+      <div
+        className="navbar-header">
+        <a
+          className="navbar-brand"
+          href="#">
+          BuildIt
+        </a>
+      </div>
+      <ul
+        className="nav navbar-nav">
+        <li
+          className="active">
+          <a
+            href="#"
+            id="a1"
+            onClick={[Function]}>
+            Add Lane
+          </a>
+        </li>
+      </ul>
+      <ul
+        className="nav navbar-nav navbar-right">
+        <li>
+          <a
+            href="#">
+            <span
+              className="glyphicon glyphicon-user" />
+             Sign Up
+          </a>
+        </li>
+        <li>
+          <a
+            href="#">
+            <span
+              className="glyphicon glyphicon-log-in" />
+             Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div
+    className="lanes" />
+  <div
+    className="navbar-fixed-bottom">
+    © 2016 Buildit. All rights reserved.
+  </div>
+</div>
+`;
