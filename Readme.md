@@ -15,3 +15,7 @@ To demonstrate the syncing of database
 9. Reload the page in new window, this will effectively push the data present in local storage to DB
 11. Show the Database value to user through mongodb UI
 
+*** JEST ***
+npm run testjest (command specified in package.json)
+processes all the test case present in __test__ folder 
+Sanpshots are created and added to __test__/__Snapshots__
